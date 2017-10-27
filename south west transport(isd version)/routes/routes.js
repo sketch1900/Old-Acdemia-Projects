@@ -18,7 +18,7 @@ function invoke(path) {
   return new Promise(function(resolve, reject) {
     options = {
       host: "bristol.api.urbanthings.io",
-      headers: { 'X-Api-Key': '0r6beKZn90a2c9EBs1IqA' },
+      headers: { 'X-Api-Key': 'Your api Key here (sign up for one!)' },
       accept: 'application/json'
     };	
     options.path = path;
@@ -73,10 +73,10 @@ app.get('/', function(req, res,next) {
 			var names = dbStop[i].toLowerCase();
 			if(names.includes(stopName) && dbStop[i].includes(direction) > -1){	
 			
-			//primary = dbId[i];
+			primary = dbId[i];
 			}
 		}
-		primary = '0100BRA16910'; //for when there is no db connection outside of uwe.
+		//primary = '0100BRA16910'; //for when there is no db connection outside of uwe and testing.
 	
 		//timetable callbalk and vechile id.	
 		invoke("https://bristol.api.urbanthings.io/api/2.0/rti/stopboard?stopID=" + primary
@@ -94,7 +94,6 @@ app.get('/', function(req, res,next) {
 
 //sends to the 2nd page
 app.get('/vehicleId', function(req,res){
-	//res.render('page2');
 	res.sendFile(path.join(__dirname,'../views/page2.html'));
 	if("vehicleId" in req.query){
 		vehicleId = req.query.vehicleId;
