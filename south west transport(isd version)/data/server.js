@@ -6,7 +6,7 @@ var app = express();
 var dbStop = [];
 var dbId = [];
 var QUERY = "SELECT * FROM stop";
-/*
+
 //connect to the db
 var connection = mysql.createConnection({
 						host     : 'db port',
@@ -29,7 +29,6 @@ connection.query(QUERY, function(err, rows) {
 		dbId[i] =  rows[i].stop_id;
 		}
 });
-*/
 		
 //sets the view engine
 app.set("views", path.join(__dirname, "../views"));
