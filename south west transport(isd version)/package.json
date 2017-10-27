@@ -1,0 +1,23 @@
+{
+  "name": "transport",
+  "version": "1.0.0",
+  "description": "A transport app",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server"
+  },
+  "author": "Team kfc All stars",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "limiter": "^1.1.0",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "unit.js": "^2.0.0"
+  }
+}

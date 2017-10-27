@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//Tigris//DTD XHTML 1.0 Transitional//EN"
+"http://style.tigris.org/tigris_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/readyset.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>User Interface</title>
+</head>
+
+<body>
+<div class="app">
+<div class="readyset">
+ <h2><a href="design.html">Design</a> &gt; User Interface</h2>
+
+ <div id="releaseinfo">
+ <h3>Release Information</h3>
+ <table border="1" cellpadding="3" cellspacing="2" class="axial">
+  <tr>
+   <th>Project:</th> 
+   <td><a href="index.html">South-West Transport</a></td> 
+  </tr>
+  <tr>
+   <th>Internal Release Number:</th> 
+   <td>1.0.0</td> 
+  </tr>
+ </table>
+ </div> <!-- /releaseinfo -->
+
+
+ <div id="overview">
+ <h3>Overview</h3>
+<!--
+ <div class="todo">
+  TODO: Answer the questions below to help you design the user
+  interface features of your system.  Some example text is provided.
+  Add or delete text as needed.
+ </div>
+-->
+ <dl>
+
+  <dt>What are the most important facts that a developer should know
+  about the user interface of this system?</dt>
+
+  <dd>That this system is built upon an framework and that the application logic and presentation
+  logic are tied together but also abstracted.</dd>
+  <dd><a class="def" href="Statemachine Diagram.png">State Machine</a></dd>
+  <dd><a class="def" href="homepage.html">Paul Alden and Takunda's html wireframe</a></dd>
+  <dd><a class="def" href="result.html">Alex Stamate html wireframe</a></dd>
+  <!-- <dt>What are the ranked goals for the user interface of this system?</dt> -->
+<!--
+  <dd>
+   <ol>
+    <li><a class="def" href="glossary-std.html#dg_use_understand">Understandability and learnability</a></li>
+
+    <li><a class="def" href="glossary-std.html#dg_use_efficiency">Task support and efficiency</a></li>
+
+<!--    <li><a class="def" href="glossary-std.html#dg_use_safety">Safety</a></li> 
+
+    <li><a class="def" href="glossary-std.html#dg_use_consistency">Consistency and familiarity</a></li> -->
+ </dl>
+ </div> <!-- /overview -->
+
+
+
+ <div id="metaphors">
+ <h3>Metaphors, Exemplars, and Standards</h3>
+<!--
+ <dl>
+  <dt>What is the central metaphor of this UI design?</dt>
+
+  <dd>PARAGRAPH</dd>
+-->
+  <dt>What existing systems have user interfaces similar to the UI you
+  want to build? What specific aspects are similar?</dt>
+
+  <dd>
+   <ul class="sample1">
+    <li><a href="http://www.google.com">google.com</a>: Our Transport app
+    will have a stop name search similar to this site.</li>
+
+    <li><a
+    href="http://www.microsoft.com/office/using/default.asp">Microsoft
+    Office</a>: We will use configurable  drop down menus the same way Office
+    2000 does.</li>
+
+   </ul>
+  </dd>
+
+
+  <dt>What UI design standards, guidelines, and styles are you following?</dt>
+
+  <dd>
+   <ul class="sample1">
+   <!-- <li><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnwue/html/welcome.asp">Microsoft UI guidelines</a></li>
+    <li><a href="http://java.sun.com/products/jlf/ed1/guidelines.html">Java UI guidelines</a></li>
+    <li><a href="http://developer.apple.com/techpubs/macosx/Essentials/AquaHIGuidelines/AHIGHIGs/index.html">Mac UI guidelines</a></li>
+    --><li><a href="http://www.w3.org/TR/WCAG10/">W3C Accessibility guidelines</a></li>
+   </ul>
+  </dd>
+
+ </dl>
+ </div> <!-- /metaphors -->
+
+ <div id="taskmodels">
+ <h3>Task Models</h3>
+
+ <dl>
+  <dt>What types of users will use this system?</dt>
+
+  <dd>See the <a href="user-needs.html">user needs document</a>.</dd>
+
+
+  <dt>What types of tasks will those users perform?</dt>
+
+  <dd>See the <a href="use-case-suite.html">use case suite</a>.</dd>
+
+ </dl>
+ </div> <!-- /taskmodels -->
+
+ <div id="content">
+ <h3>Content Model / Interaction Contexts</h3>
+<!--
+ <div class="todo">
+  TODO: List interaction contexts.  Each interaction context is a
+  "place" where users see information and where they select commands
+  or options.  In a graphical user interface, a interaction context
+  will eventually be implemented as a window or dialog box.  In other
+  applications, an interaction context may be implemented as, e.g., a
+  web page, a voice menu prompt, or a physical control panel.
+ </div>
+
+ <div class="tip">
+  TIP: Each interaction context is an exclusive mode: the user can only
+  use one interaction context at a time.  All the components within one
+  context are visible and usable at the same time.  E.g., if a window
+  has three tabs, that is three interaction contexts because only one
+  tab can be used at a time.
+ </div>
+
+ <div class="todo">
+  TODO: For each interaction context, list the abstract components
+  within that context.  Each component is a piece of information, or a
+  user interface affordance.  In a GUI, each abstract component will
+  eventually become a widget, but the choice of specific widgets
+  happens later. Choice of abstract components
+  corresponds to step 2 in the <a
+  href="http://www.ics.uci.edu/~jrobbins/htmlproto/index.html">HTML
+  prototyping example</a> demonstrated in class.
+ </div>
+
+ <div class="tip">
+  TIP: Most high frequency use cases should be carried out in only one
+  interaction contexts.  A use case that requires three interaction
+  contexts could be hard to use.  However, interaction contexts with
+  too many components can also be hard to use.
+ </div>
+-->
+
+ <table border="1" cellpadding="3" cellspacing="2" width="100%">
+  <tr>
+   <th><div>Interaction Context</div><div>--Abstract UI Components</div></th>
+   <th>Purpose</th>
+   <th>Contents / Constraints / Behavior</th>
+  </tr>
+
+  <tr>
+   <td><a href="homepage.html">Home page</a></td>
+   <td>Verify that the current user has selected a direction and entered a stop name</td>
+   <td></td>
+  </tr>
+
+  <tr>
+   <td>--Prompt</td>
+   
+   <td>Tell the user to enter a stop name and select a direction</td>
+
+   <td>"Please select a direction and enter a stop name in the text field".</td>
+  </tr>
+
+  <tr>
+   <td><a href="result.html">Result page</a></td>
+   <td>Display timetable text here.</td>
+   <td></td>
+  </tr>
+
+ </table>
+ </div> <!-- /content -->
+
+ <div id="constraints">
+ <h3>Technical Constraints / Operational Contextualization</h3>
+
+ <dl>
+  <dt>What are your assumptions about the output devices?</dt>
+
+  <dd class="sample2">We make very few assumptions about the user's screen or web
+  browser, other than the assumption that they can view page
+  somehow. We will not use any audio features.</dd>
+
+  <dt>What are your assumptions about the input devices that you will use?</dt>
+
+  <dd class="sample2">We assume only that the user has a standard keyboard and
+  mouse on a mobile device or desktop.</dd>
+
+  <dt>What are your assumptions about the amount of time users will
+  spend on tasks?</dt>
+
+  <dd class="sample1">Use cases UC-01 and UC-02 and UC-03 are expected to take a within 5-20 seconds
+  each.  Use case UC-00 should take more than an hour.  All other
+  use cases should take less than 30 seconds each.</dd>
+
+
+  <dt>What windowing systems, UI libraries, or other UI technologies
+  will you use?</dt>
+
+  <dd class="sample2">Html with embedded javascript(EJS) with simple css and javascript.</dd>
+ </dl>
+ </div> <!-- /constraints -->
+<!--
+ <div id="checklist">
+ <h3>User Interface Checklist</h3>
+<!--
+ <div class="todo">
+   TODO: Answer the following questions to help evaluate the design.
+   You may add or remove questions to fit your project.
+ </div>
+
+ <div class="tier2">
+ <h4>Understandability and learnability</h4>
+ <dl>
+  <dt>Are there any labels of
+  icons that are likely to be misunderstood?</dt>
+
+  <dd>None as there are no icons</dd>
+
+  <h4>Task Support and Efficiency</h4>
+  <dl>
+
+  <dt>Which use cases force the user to
+  work through more than two interaction contexts?</dt>
+
+  <dd>UC-01 and UC-02:</dd>
+
+
+  <dt>Which use cases force the user to
+  perform slow or difficult UI steps? E.g., entering a long code
+  number like an ISBN.  E.g., long mouse-drag operations.</dt>
+
+  <dd>None</dd>
+  </dl>
+
+  
+  <h4>Safety</h4>
+  <dl>
+  <dt>Are there any dangerous or irreversible actions that are
+  done with only one step?</dt>
+
+  <dd>N/A</dd>
+  </dl>
+
+
+  <h4>Consistency and Familiarity</h4>
+  <dl>
+  <dt>Do UI elements in your system work
+  the same as they do in the existing example systems you identified?</dt>
+
+  <dd>Yes</dd>
+
+
+  <dt>Do all elements in your system that
+  appear the same, actually function the same?</dt>
+
+  <dd>No</dd>
+
+  <dt>Are all elements share consistent
+  visual characteristics such as font and color scheme, unless there
+  is a reason for them to differ?</dt>
+
+  <dd>Yes</dd>
+
+  <dt>Are labels used consistently
+  throughout the system?  E.g., not "forward/back" in some contexts
+  and "next/prev" in others.</dt>
+
+  <dd>Yes</dd>
+ </dl>
+ </div>
+ </div> <!-- /checklist -->
+
+</div>
+
+<!--
+ <div class="todo">
+  TODO:  Check for <a
+  href="http://readyset.tigris.org/words-of-wisdom/design-ui.html">words
+  of wisdom</a> and discuss ways to improve this template.
+  Or, evaluate the ReadySET Pro <a title="pro use case template and sample test plan"
+  href="http://www.readysetpro.com/">professional UI design template</a>.
+ </div>
+
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2003-2004 Jason Robbins.  All rights reserved. <a href="readyset-license.html">License terms</a>.
+ Retain this copyright statement whenever this file is used as a
+ template.
+</div>
+
+-->
+</div>
+</body>
+</html>

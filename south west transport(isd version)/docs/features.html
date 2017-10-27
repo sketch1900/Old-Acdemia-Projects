@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//Tigris//DTD XHTML 1.0 Transitional//EN"
+"http://style.tigris.org/tigris_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/readyset.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>Features</title>
+</head>
+
+<body>
+<div class="app">
+<div class="readyset">
+
+
+<h2><a href="srs.html">SRS</a> &gt;
+    <a href="feature-set.html">Feature Set</a> &gt; Features</h2>
+
+ <div id="releaseinfo">
+ <h3>Release Information</h3>
+ <table border="1" cellpadding="3" cellspacing="2" class="axial">
+  <tr>
+   <th>Project:</th> 
+   <td><a href="index.html">South-West Transport</a></td> 
+  </tr>
+  <tr>
+   <th>Internal Release Number:</th> 
+   <td>1.0.0</td> 
+  </tr>
+  <tr>
+   <th>Related Documents:</th> 
+   <td>
+    <div><a href="proposal.html">Project proposal</a> &gt;
+         <a href="user-needs.html">User needs</a></div>
+    <div><a href="srs.html">SRS</a> &gt;
+         <a href="use-case-suite.html">Use case suite</a></div>
+    <div><a href="feature-format.html">Feature format</a></div>
+   </td>
+  </tr>
+ </table>
+ </div> <!-- /releaseinfo -->
+
+
+ <div id="processimpact">
+  <b>Process impact:</b> This is a set of detailed
+  feature descriptions.
+ </div> <!-- /processimpact -->
+<!--
+<div class="todo">
+ TODO: For each feature listed in the <a
+ href="feature-set.html">feature set</a>, give a detailed description
+ of the feature here.  Describe each feature in enough detail that it
+ could be implemented by any member of the development team (not only
+ someone who already informally knows what to do).
+</div>
+
+<div class="tip">
+ TIP: Start with a short textual description of each feature.  Then,
+ add more formal information as needed to make each
+ description precise and unambiguous.  E.g.,
+    <ul>
+     <li>Precisely define valid inputs, and error handling</li>
+     <li>Specify data structures with UML or logical schema</li>
+     <li>Specify UI aspects of features with tiny mock-ups</li>
+     <li>Specify key decisions with decision trees or tables</li>
+     <li>Specify key algorithms with pseudo-code or flow charts</li>
+     <li>Specify state-based behavior with state machines or tables</li>
+     <li>Specify sequences of events with scenario diagrams</li>
+    </ul>
+</div>
+-->
+
+
+<div id="F-00"> 
+<h3>F-00: Configure the site</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>Expected</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>Days</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>Safe</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-00">UC-00</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The site administrators will be able to configure the web app.
+ </p>
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system shall allow the modification of its output data.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>NONE</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-01"> 
+<h3>F-01: retrieve stop names from database</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>Weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>Safe</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-01">UC-01</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall reteive a list of stop names and primary codes.
+ </p>
+   <p>Precise Details:</p>
+   <ul>
+    <li>Retrieve a list of pre-defined stop names from the database and storing there primary codes in an array	</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<div id="F-02"> 
+<h3>F-02: retrieve textfield input</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>1-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-01">UC-01</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall take the input from the text field and then redirect to another page.
+ </p>  
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system takes the input stores it matching it also the stop name data from the database</li>
+   </ul>
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>stop maybe discontinued or has mutliple directions</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-03"> 
+<h3>F-03: retreive direction choices</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>months</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>1-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-02">UC-02</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall reteive a option from an html select menu.
+ </p>
+   
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system takes the option value and combines it with the stopname.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>Stop may be discontinued</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-04"> 
+<h3>F-04: Match input to database names</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>Desired</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>1-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-02">UC-02</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall match the f-03 combined data to the database dataset and reteive a primary code.
+ </p>
+   
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system shall match the f-03 combined data to the database dataset and reteive a primary code.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>Matched data might not be exact match for the dataset to match.</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-05"> 
+<h3>F-05: retrieve timetables from bristol api with matched database result</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>optional</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>2-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-02">UC-02</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall invoke the bristol api with the primary code from f-04 reteiving a timetable.
+ </p>
+   
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system shall invoke the bristol api with the primary code from f-04 reteiving a timetable.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>The system needs to receive only one primary code anymore and it will fail.</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-06"> 
+<h3>F-06: retreive 2nd textfield input</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>optional</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>2-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-03">UC-03</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The system shall reteive the vechile id from a text field storing it in a variable.
+ </p>
+   
+   <p>Precise Details:</p>
+   <ul>
+	<li>The system shall reteive the vechile id from a text field storing it in a variable.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>Needs to be able to access the variable from the query string.</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+
+<div id="F-07"> 
+<h3>F-07: Match 2nd input to timetable from api</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Priority:</th>
+  <td>optional</td>
+ </tr>
+ <tr>
+  <th>Effort:</th>
+  <td>weeks</td>
+ </tr>
+ <tr>
+  <th>Risk:</th>
+  <td>2-Risk</td>
+ </tr>
+ <tr>
+  <th>Functional area(s):</th>
+  <td>System</td>
+ </tr>
+ <tr>
+  <th>Use case(s):</th>
+  <td><a href="use-cases.html#UC-04">UC-04</a></td>
+ </tr>
+ <tr>
+  <th>Description:</th>
+  <td>
+   <p>
+	The System shall match the 2nd text field input to the timetable to reteive an exact timetable for the 2nd textfield text.
+ </p>
+   
+   <p>Precise Details:</p>
+   <ul>
+	<li>The System shall match the 2nd text field input to the timetable to reteive an exact timetable for the 2nd textfield text.</li>
+   </ul>
+
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions:</th>
+  <td>
+   <ul>
+    <li>If the vehicle id doesnt match the result will be null or empty.</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<!--
+  <div class="todo">
+  TODO:  Check for <a
+  href="http://readyset.tigris.org/words-of-wisdom/features.html">words
+  of wisdom</a> and discuss ways to improve this template.
+  Or, evaluate the ReadySET Pro <a title="pro use case template and sample test plan"
+  href="http://www.readysetpro.com/">professional feature specification template</a>.
+  </div>
+
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2003-2004 Jason Robbins.  All rights reserved. <a href="readyset-license.html">License terms</a>.
+ Retain this copyright statement whenever this file is used as a
+ template.
+</div>
+-->
+</div>
+</body>
+
+</html>

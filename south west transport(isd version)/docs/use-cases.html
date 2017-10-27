@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//Tigris//DTD XHTML 1.0 Transitional//EN"
+"http://style.tigris.org/tigris_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/readyset.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>Use Cases</title>
+</head>
+
+<body>
+<div class="app">
+<div class="readyset">
+
+
+<h2><a href="srs.html">SRS</a> &gt; <a href="use-case-suite.html">Use Case Suite</a> &gt; Use Cases</h2>
+
+ <div id="releaseinfo">
+ <h3>Release Information</h3>
+ <table border="1" cellpadding="3" cellspacing="2" class="axial">
+  <tr>
+   <th>Project:</th> 
+   <td><a href="index.html">South-West Transport</a></td> 
+  </tr>
+  <tr>
+   <th>Internal Release Number:</th> 
+   <td>1.0.0</td> 
+  </tr>
+  <tr>
+   <th>Related Documents:</th> 
+   <td>
+    <div><a href="proposal.html">Project proposal</a> &gt;
+         <a href="user-needs.html">Use needs</a></div>
+    <div><a href="feature-set.html">Feature set</a></div>
+    <div><a href="use-case-format.html">Use case format</a></div>
+    <div><a href="UseCase Diagram.png">Use case diagram</a></div>
+
+   </td>
+  </tr>
+ </table>
+</div> <!-- /releaseinfo -->
+
+<!-- <div class="todo">
+ TODO: Note any aspects that are common to all use cases here.  This
+ helps keep the use cases themselves short.  If any use case is an
+ exception, note it's specific value to replace or add to the default.
+</div> --> 
+
+<div id="defaults">
+<h3>Default Aspects of All Use Cases</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Direct Actors:</th>
+  <td>
+   <div>User: end-user in any role</div>
+   <div>System: The system being built</div>
+   <div>When actors are not listed, assume User is doing it.</div>
+   <div>Items beginning with &quot;see&quot; indicate that System has presented a new screen.</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>Project Owners and other members</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>User is on the Webapp</td>
+ </tr>
+</table>
+</div> <!-- /defaults -->
+
+<!--
+<div class="todo">
+ TODO: For each use case listed in the <a
+ href="use-case-suite.html">use case suite</a>, create an HTML anchor
+ and heading with it's unique ID, then fill in the rows of the table
+ to specify the use case in detail.  
+</div>
+
+
+<div class="tip"> 
+  TIP: It is OK to simply list the names of a lot of use cases without
+  actually writing the use case in detail.  Document the most
+  important use cases first and come back to less important ones
+  later.
+</div>
+
+<div class="tip">
+ TIP: See detailed tips in the <a
+ href="use-case-format.html#guidelines">guidelines for writing use
+ cases</a>.
+</div>
+-->
+
+<div id="UC-00">
+<h3>UC-00: Configure the site</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Summary:</th>
+  <td>The administrator navigates to the site configuration page and 
+  uses it to change the behavior of the web application.</td>
+ </tr>
+ <tr>
+  <th>Priority:</th>
+  <td>Expected</td>
+ </tr>
+ <tr>
+  <th>Use Frequency:</th>
+  <td>Rarely</td>
+ </tr>
+ <tr>
+  <th>Direct Actors:</th>
+  <td>System, Administrator</td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>executives/interlectual property owner, User</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>
+   <div>Project is set up</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Main Success Scenario:</th>
+  <td>
+   <ol>
+    <li>visit admin configuration page</li>
+    <li>Update page data</li>
+    <li>confim changes with the admin configuration page</li>
+   </ol>
+  </td>
+ </tr>
+ <tr>
+  <th>Alternative Scenario Extensions:</th>
+  <td>
+   <ul>
+    <li>N/A</li>
+   </ul>
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions</th>
+  <td>
+   <ul>
+    <li>How will administrators know the information has been updated?
+    They could compare them with the bus agencies offical travel timetable
+    and match them and make the nessercary changes.</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<div id="UC-01">
+<h3>UC-01:Check Stop</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Summary:</th>
+  <td>The web app displays a textfield for the entry of stop name</td>
+ </tr>
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Use Frequency:</th>
+  <td>Always</td>
+ </tr>
+ <tr>
+  <th>Direct Actors:</th>
+  <td>System, User, administrator</td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>Interlectual property owner/executives, User</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>
+   <div>Project is set up</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Main Success Scenario:</th>
+  <td>
+   <ol>
+    <li>Display TextField</li>
+	<li>enter text into the field</li>
+	<li>submit</li>
+   </ol>
+  </td>
+ </tr>
+ <tr>
+  <th>Alternative Scenario Extensions:</th>
+  <td>
+   <ul>   
+    <li>If CONDITION, then ALTERNATIVE STEPS.
+     <ul>
+      <li></li>
+     </ul>
+    </li>
+   </ul>
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions</th>
+  <td>
+   <ul>
+    <li></li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<div id="UC-02">
+<h3>UC-02: Check Direction</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Summary:</th>
+  <td>A combobox containing the directions that the bus is bound by</td>
+ </tr>
+ <tr>
+  <th>Priority:</th>
+  <td>Desired</td>
+ </tr>
+ <tr>
+  <th>Use Frequency:</th>
+  <td>Always</td>
+ </tr>
+ <tr>
+  <th>Direct Actors:</th>
+  <td>User, Administrator</td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>Interlectual property owner/executives, User</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>
+   <div>Project is set up</div>
+   <div>uc-01 has to be successfully completed</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Main Success Scenario:</th>
+  <td>
+   <ol>
+    <li>display a combobox displaying directions of route</li>
+    <li>be able to select one</li>
+    <li>submit the stop name and combobox value</li>
+   </ol>
+  </td>
+ </tr>
+ <tr>
+  <th>Alternative Scenario Extensions:</th>
+  <td>
+   <ul>
+    <li>If CONDITION, then ALTERNATIVE STEPS.
+     <ul>
+      <li>validation fails then restart process.</li>
+     </ul>
+    </li>   
+   </ul>
+  </td>
+ </tr>
+ <tr>
+  <th>Notes and Questions</th>
+  <td>
+   <ul>
+    <li>User could get the wrong direction</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<div id="UC-03">
+<h3>UC-03: Check Id</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Summary:</th>
+  <td>Display a textfield with the requirement of the bus's id to be entered</td>
+ </tr>
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Use Frequency:</th>
+  <td>Always</td>
+ </tr>
+ <tr>
+  <th>Direct Actors:</th>
+  <td>System, User, Administrator</td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>Interlectual property owner/executives, User</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>
+   <div>Project is set up</div>
+   <div>uc-01 and uc-02 have to be successfully completed</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Main Success Scenario:</th>
+  <td>
+   <ol>
+    <li>display text field</li>
+    <li>user can enter a bus name e.g 48A</li>
+	<li>sumbit the selection</li>
+   </ol>
+  </td>
+ </tr>
+ <tr>
+  <th>Alternative Scenario Extensions:</th>
+  <td>
+   <ul>
+    <li>If CONDITION, then ALTERNATIVE STEPS.
+     <ul>
+      <li>None</li>
+     </ul>
+    </li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<div id="UC-04">
+<h3>UC-04: Check timetable</h3>
+<table border="1" cellpadding="3" cellspacing="2" class="axial">
+ <tr>
+  <th>Summary:</th>
+  <td>Display a list of times for the selected vehicles</td>
+ </tr>
+ <tr>
+  <th>Priority:</th>
+  <td>Essential</td>
+ </tr>
+ <tr>
+  <th>Use Frequency:</th>
+  <td>Always</td>
+ </tr>
+ <tr>
+  <th>Direct Actors:</th>
+  <td>User, Administrator</td>
+ </tr>
+ <tr>
+  <th>Stakeholders:</th>
+  <td>Interlectual property owner/executives, User</td>
+ </tr>
+ <tr>
+ <th>Prereq:</th>
+  <td>
+   <div>Project is set up</div>
+  </td>
+ </tr>
+ <tr>
+  <th>Main Success Scenario:</th>
+  <td>
+   <ol>
+    <li>Display a list of vehicle timetables</li>
+   </ol>
+  </td>
+ </tr>
+ <tr>
+  <th>Alternative Scenario Extensions:</th>
+  <td>
+   <ul>
+    <li>If CONDITION, then ALTERNATIVE STEPS.
+     <ul>
+      <li>None</li>
+     </ul>
+    </li>
+    </ul>
+    </td>
+    </tr>
+	 <tr>
+  <th>Notes and Questions</th>
+  <td>
+   <ul>
+    <li>vechile timetable might not exist</li>
+    <li>vechile might not stop be available at the desirred stop so</li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+
+<!--
+</div>
+
+  <div class="todo">
+  TODO:  Check for <a
+  href="http://readyset.tigris.org/words-of-wisdom/use-cases.html">words
+  of wisdom</a> and discuss ways to improve this template.
+  Or, evaluate the ReadySET Pro <a
+  href="http://www.readysetpro.com/">professional use case template</a>.
+  </div>
+
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2003-2004 Jason Robbins.  All rights reserved. <a href="readyset-license.html">License terms</a>.
+ Retain this copyright statement whenever this file is used as a
+ template.
+</div>
+-->
+</div>
+</div>
+</body>
+</html>

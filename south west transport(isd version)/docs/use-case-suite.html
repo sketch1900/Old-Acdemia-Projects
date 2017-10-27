@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//Tigris//DTD XHTML 1.0 Transitional//EN"
+"http://style.tigris.org/tigris_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/readyset.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>Use Case Suite</title>
+</head>
+
+<body>
+<div class="app">
+<div class="readyset">
+
+
+<h2><a href="srs.html">SRS</a> &gt; Use Case Suite</h2>
+
+ <div id="releaseinfo">
+ <h3>Release Information</h3>
+ <div class="axial">
+ <table border="1" cellpadding="3" cellspacing="2">
+  <tr>
+   <th>Project:</th> 
+   <td><a href="index.html">Transport app</a></td> 
+  </tr>
+  <tr>
+   <th>Internal Release Number:</th> 
+   <td>1.0.0</td> 
+  </tr>
+  <tr>
+   <th>Related Documents:</th> 
+   <td>
+    <div><a href="proposal.html">Project proposal</a> &gt;
+         <a href="user-needs.html">User needs</a></div>
+    <div><a href="srs.html">SRS</a> &gt;
+         <a href="feature-set.html">Feature set</a></div>
+    <div><a href="use-case-format.html">Use case format</a></div>
+    <div><a href="UseCase DIAGRAM.png">Use case diagram</a></div>
+   </td>
+  </tr>
+ </table>
+ </div>
+ </div> <!-- /releaseinfo -->
+
+<div id="processimpact">
+ <b>Process impact:</b> A use case suite is simply
+ a table of contents for the individual use cases.  Much like a test
+ suite, organizing the suite of use cases by priority, functional area,
+ actor, business object, or release can help identify parts of the
+ system that need additional use cases.
+</div> <!-- /processimpact -->
+<!--
+<div class="todo"> 
+  TODO: Before writing individual use cases, list the use cases
+  that you think you will need.  Organize them in a way that will
+  purposely leave visible blanks on this page if you are missing use
+  cases.  E.g., see "Scalability and availability". Choose one or more of the
+  organizations show below.
+</div>
+
+<div class="tip"> 
+  TIP: Refer back to the user stories in your <a
+  href="user-needs.html">user needs</a> document.  Use them for ideas
+  and make sure that you cover all of them.  Remember that use cases
+  are more precise than user stories, and there may be several use
+  cases for a given user story.
+</div>
+
+<div class="tip"> 
+  TIP: The use case suite can be organized into nested lists
+  according to other coverage criteria, e.g., by actor.  Or, it
+  can be organized into tables that consider two aspects at a time,
+  e.g., business objects vs. actor.  If a certain section of the
+  tree or table does not need use cases, explicitly mark it "N/A".
+  Otherwise, mark it "TODO".
+</div>
+
+-->
+
+<div id="byfunction">
+<h3>Use Cases by Functional Area</h3>
+
+<ul>
+ <li>check direction
+  <ul>
+   <li><a href="use-cases.html#UC-02">UC-02</a>Check bus direction</li>
+  </ul>
+ </li>
+
+ <li>check HeadSign
+  <ul>
+   <li><a href="use-cases.html#UC-03">UC-03</a>Check HeadSign</li>
+  </ul>
+ </li>
+ 
+ <li>check stop
+  <ul>
+   <li><a href="use-cases.html#UC-01">UC-01</a>Check the bus stop</li>
+  </ul>
+ </li>
+
+ <li>check timetable
+  <ul>
+   <li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </ul>
+ </li>
+
+
+ <li>Scalability and availability
+  <ul>
+   <li>N/A: These features are completely automated and internal,
+   users never interact with them</li>
+  </ul>
+ </li>
+</ul>
+
+ </div> <!-- /byfunction -->
+
+<div id="bystakeholder">
+<h3>Use Cases by Stakeholder</h3>
+
+<p>This information is shown in the <a href="UseCase DIAGRAM.png">use case
+diagram</a>, but it is shown here as a list or table so that missing
+use cases are more noticeable.</p>
+
+
+<ul>
+<li>Users
+  <ul>
+    <li><a href="use-cases.html#UC-01">UC-01</a>Check the bus stop</li>
+    <li><a href="use-cases.html#UC-02">UC-02</a>Check bus direction</li>
+   <li><a href="use-cases.html#UC-03">UC-03</a>Check HeadSign</li>
+   <li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </ul>
+ </li>
+ <li>All Stakeholders
+  <ul>
+  <li><a href="use-cases.html#UC-01">UC-01</a>Check the bus stop</li>
+    <li><a href="use-cases.html#UC-02">UC-02</a>Check bus direction</li>
+   <li><a href="use-cases.html#UC-03">UC-03</a>Check HeadSign</li>
+   li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </ul>
+ </li>
+
+ <li>Administrators
+  <ul>
+   <li><a href="use-cases.html#UC-04">UC-00</a> Configure the site</li>
+  </ul>
+ </li>
+
+ <li>Executives
+  <ul>
+   <li>N/A: this stakeholder never directly interacts with the system</li>
+  </ul>
+ </li>
+
+</ul>
+ </div> <!-- /bystakeholder -->
+
+
+
+<div id="bypriority">
+<h3>Use Cases by Priority</h3>
+
+<ul>
+ <li>Essential
+  <ul>
+	<li><a href="use-cases.html#UC-01">UC-01</a>Check the bus stop</li>
+	<li><a href="use-cases.html#UC-03">UC-03</a>Check HeadSign</li>
+	<li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </ul>
+ </li>
+
+ <li>Expected
+  <ul>
+	<li><a href="use-cases.html#UC-00">UC-00</a> Configure the site</li>
+  </ul>
+ </li>
+
+ <li>Optional
+  <ul>
+	<li><a href="use-cases.html#UC-02">UC-02</a>Check bus direction</li>
+  </ul>
+ </li>
+
+</ul>
+ </div> <!-- /bypriority -->
+
+
+
+<div id="bybusinessobject">
+<h3>Use Cases by Business Object and Actor</h3>
+
+<table border="1" cellpadding="3" cellspacing="2" class="linklist">
+ <tr>
+  <th>BO \ Actor</th>
+  <th>All</th>
+  <th>User</th>
+  <th>Admin</th>
+ </tr>
+
+	
+ <tr>
+  <th>Configure site</th>
+  <td>
+   N/A
+  </td>
+  <td>
+   N/A
+  </td>
+  <td>
+   <a href="use-cases.html#UC-00">Configuring and maintianing the web app</a>
+  </td>
+ </tr>
+	
+
+ <tr>
+  <th>Check Stop</th>
+  <td>
+   <li><a href="use-cases.html#UC-01">UC-01</a>Check the bus stop</li>
+  </td>
+  <td>
+   N/A
+  </td>
+ </tr>
+
+
+ <tr>
+  <th>Check Timetable</th>
+  <td>
+  <li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </td>
+  <td>
+   <li><a href="use-cases.html#UC-04">UC-04</a>displays the bus timetable</li>
+  </td>
+  <td>
+   N/A
+  </td>
+ </tr>
+
+ <tr>
+  <th>Check vechile type</th>
+  <td>
+   <a href="use-cases.html#UC-04">view transport types</a>
+  </td>
+  <td>
+   <a href="use-cases.html#UC-04">view transport types</a>
+  </td>
+  <td>
+   N/A
+  </td>
+ </tr>
+
+ <tr>
+  <th>Check location</th>
+  <td>
+   <a href="use-cases.html#UC-05">select users location</a>
+  </td>
+  <td>
+   <a href="use-cases.html#UC-05">select users location</a>
+  </td>
+  <td>
+   N/A
+  </td>
+ </tr>
+</table>
+ </div> <!-- /bybusinessobject -->
+
+
+</div> <!--
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2003-2004 Jason Robbins.  All rights reserved. <a
+ href="readyset-license.html">License terms</a>.  Retain this
+ copyright statement whenever this file is used as a template.
+</div>
+   -->
+</div>
+</body>
+</html>

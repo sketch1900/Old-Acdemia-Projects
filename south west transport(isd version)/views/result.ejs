@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<title>South-West Transport</title>
+</head>
+<body>
+<h1> Time table for <%= stopName %> <%= direction %>:</h1> 
+
+<table>
+<% for(var i =0; i < done.length; i++){ %>
+<tr>
+	<td><%= done[i] %></td>
+</tr>
+<% } %>
+</table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>South-West Transport</title>
+</head>
+<body>
+
+<!-- Takunda Chokuruma's part of the html wireFrame -->
+<p>Enter the stop Name:</p>
+<form name="myform" method="get" onsubmit="return validateForm()" >
+<input id="texts" class="form-control" type="text" name="stopId" value="" required>
+
+<!-- Paul Aldens part of the html wireframe -->
+<p>Select a Stop Direction</p>
+<select name="myDirection">
+  <option value="adj">Adjacent</option>
+  <option value="opp">Opposite</option>
+    <option value="(E-bound)">East Bound</option>
+  <option value="(W-bound)">West Bound</option>
+  <option value="(S-bound)">South Bound</option>
+   <option value="(SW-bound)">South-West Bound</option>
+    <option value="(SE-bound)">South-East Bound</option>
+  <option value="(NW-bound)">North-West Bound</option>
+   <option value="(N-bound)">North Bound</option>
+ <option value="(NE-bound)">North-East Bound</option>
+ <option value="(Stop A)">Stop A</option>
+ <option value="(Stop B)">Stop B</option>
+ <option value="(Stop C)">Stop C</option>
+ <option value="(Stop D)">Stop D</option>
+ <option value="(Stop E)">Stop E</option>
+</select>
+
+<input  id="button1" type="submit" value="Enter">
+
+</form>
+<script src="../public/js/forms.js"></script>
+</form>
+</body>
+</html>

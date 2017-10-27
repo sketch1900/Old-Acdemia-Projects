@@ -1,0 +1,6 @@
+CREATE DATABASE `stops` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+CREATE TABLE `stop` (
+  `stop_id` text,
+  `stop_name` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

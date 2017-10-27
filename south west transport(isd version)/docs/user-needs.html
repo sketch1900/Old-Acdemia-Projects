@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//Tigris//DTD XHTML 1.0 Transitional//EN"
+"http://style.tigris.org/tigris_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/readyset.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>User Needs</title>
+</head>
+
+<body>
+<div class="app">
+<div class="readyset">
+
+ <h2>User Needs</h2>
+
+ <div id="projectinfo">
+ <h3>Project Information</h3>
+ <div class="axial">
+ <table border="1" cellpadding="3" cellspacing="2">
+  <tr>
+   <th>Project:</th> 
+   <td><a href="index.html">South-West Transport</a></td>
+  </tr>
+  <tr>
+   <th>Attached worksheets:</th> 
+   <td>
+    <div>User needs &gt<a href="interview-notes.html"> Interview notes</a></div>
+   </td>
+  </tr>
+  <tr>
+   <th>Related Documents:</th> 
+   <td>
+    <div><a href="proposal.html">Project proposal</a> &gt;
+         <a href="target-and-benefits.html">Target audience and benefits</a></div>
+    <div><a href="srs.html">Software requirements specification</a></div>
+    <div><a href="glossary.html">Glossary</a></div>
+   </td>
+  </tr>
+ </table>
+ </div>
+ </div> <!-- /projectinfo -->
+
+ <div id="processimpact">
+  <strong>Process impact:</strong> The statement of
+  user needs documents and explains the actual desires of stakeholders
+  in roughly their own words.  What they <i>desire</i> is never exactly
+  what the product <i>provides</i>.  Documenting user needs here,
+  independently from the <a href="srs.html">SRS</a>, helps to keep the
+  SRS precise and makes the tasks of verification and validation more
+  effective.  This document is <em>not</em> an informal draft of the
+  SRS, it is different document with a complementary purpose.
+ </div> <!-- /processimpact -->
+
+ <div id="agreedgoals">
+ <h3>Agreed Goals</h3>
+
+<!-- <div class="todo">
+  TODO: Has there been a clear statement of the overall goal of this
+  project that the stakeholders agree to?  If so, paste it here or add
+  a hyperlink.  If not, you should summarize your understanding of the
+  project goals into a brief statement and try to get the stakeholders
+  to agree to it.  The text below gives three alternative examples,
+  select one, or write your own.
+ </div> -->
+
+ <p class="sample1">We were given an <a href="LINK">initial project
+ description</a> that is agreed to by all stakeholders.</p>
+
+ </div> <!-- /agreedgoals -->
+
+ <div id="environment">
+ <h3>Environment</h3>
+
+ <!-- <div class="todo">
+  TODO: Briefly describe various aspects of the environment where the
+  software will be used.  Describe the environment as it <i>is</i> or
+  <i>will be</i>, not what you would wish it to become.  The text
+  below gives a few examples.
+ </div> -->
+
+ <dl>
+
+  <dt>What is the system's business environment?</dt>
+
+  <dd class="sample1">Each user will have to have some prior knowlegde of their
+  desired stop in order to search for its timetable intrested in such as its name.
+  The timetables change regualry and this tool must be able to supply the correct
+  timetable for the stop.</dd>
+
+  <dt>What is the system's physical environment?</dt>
+
+  <dd class="sample2">This application runs on any device that has a web browser
+  The user can use it at any time or in any enviroment.</dd>
+
+  <dt>What is the system's technology environment (hardware and software)?</dt>
+
+  <dd class="sample2">90% of users will use this on mobile devices at a mix of apple
+  or andriod technologies the remaining 10% will come from desktop/laptop and other
+  devices.</dd>
+
+ </dl>
+ </div> <!-- /environment -->
+
+ <div id="actors">
+ <h3>Stakeholders / Actors</h3>
+
+ <div class="todo">
+  Stakeholder: EndUser - the user that will use the app to find
+  timetables for their desired stop.
+
+  Stakeholder: Deveolper - The creater of the app and maintener of
+  its programming code.
+
+  Stakeholder: Interlectural property owner - The provider of the 
+  apps home and ideal.
+
+  <!-- change me..
+
+  List and describe the stakeholders for this product.  These
+  can be named individuals or roles that people play.  For each
+  stakeholder, list/rank their key needs.  Consider the expected
+  technical expertise of the stakeholders and how often they are
+  likely to use the system, as well as key strengths, weaknesses,
+  preferences, or other characteristics.  Use a greater-than sign to
+  indicate inheritance among types of actors.
+ </div>
+
+ <div class="tip">
+  TIP: To get information on types of users, you can talk to actual
+  users.  You may also want to talk to user surrogates (people who
+  work with users), such as domain experts, technical trainers,
+  technical support staff, technical writers, supervisors of users,
+  and your own sales and marketing department.  You can find clues in
+  manuals and marketing materials for competing products.
+ </div>
+
+-->
+
+ <dl class="sample1">
+  <dt id="all">All</dt>
+
+  <dd>All stakeholders share the following key needs:  
+   <ol>
+    <li>Security against abuses by other site visitors</li>
+    <li>Convenient access to the site any time over the Internet</li>
+   </ol>
+  </dd>
+
+
+  <dt id="player">User</dt>
+
+  <dd>Users want to find the information about a specific stops timetable
+  as soon as possible and will become destracted by adds of games or
+  other information quickly while this is the case they will also grow
+  impaitent if it takes too long to retrieve that information.
+
+   <p>Key needs:</p>
+   <ol>
+    <li>Easily find information</li>
+    <li>Lets there choices dictate the information they recieve</li>
+    <li>be able understand the data presented to them</li>
+    <li>Easily restart or end the proccess it if is not to their liking.</li>
+   </ol>
+  </dd>
+
+
+  <dt id="advplayer">Administrator </dt>
+
+  <dd>Administrators seek to maintain the web app and prevent the decay
+      or presentation of false information while keeping the app/site 
+      consistant with its core functions.
+
+   <p>Key needs:</p>
+   <ol>
+    <li>View usercount and useage</li>
+    <li>keep track of data's age</li>
+    <li>Understand layout and presentation of the data</li>
+   </ol>
+  </dd>
+
+
+  <dt id="STAKEHOLDER1">executive/interlectural property owner</dt>
+
+  <dd>This stakeHolder wants the product to fit their idea and conform to what 
+  they believe to be the correct way.</dd>
+
+ </dl>
+ </div> <!-- end section -->
+ 
+ <div id="notes">
+ <h3>Notes from Interviews and Brainstorming</h3>
+ 
+<!--
+ <div class="todo">
+  TODO: Keep a log of your requirements gathering.  Paste in notes
+  from any face-to-face or telephone conversations with stakeholders
+  or from brainstorming sessions with members of the development team.
+  If the communication took place via email, link to it in the archive
+  or paste it here.
+ </div>
+-->
+
+ <dl class="sample1">
+  <dt>14/2/2017,  Takunda chukurama and </dt>
+
+  <dt>14/2/2017,Paul-David Alden</dt>
+
+  <dd>
+	The app that I would like built should serve the purpose of identifying bus
+	timetables from my chosen stop. I would like the app to be able to list all
+	the buses available for the next 12hrs as well as having the ability to allow
+	me to bookmark specific stops. It should be accessible  from my smartphone and
+	also have the ability to be accessed without the need for an internet connection. 
+</dd>
+
+ 
+
+ </dl>
+ </div> <!-- /actors -->
+
+ <div id="userstories">
+ <h3>User Stories</h3>
+<!--
+ <div class="todo">
+  TODO: Write brief user stories to explain how various actors would
+  interact with the system (directly and indirectly) to accomplish a
+  real-world goal.  User stories are <em>not</em> use cases: user
+  stories are brief (3-5 sentences) paragraphs that describe one
+  specific scenario in concrete terms.  In this description of user
+  needs, do not make assumptions about details of the system, instead
+  focus on the users. Note the source of each user story.
+ </div>
+-->
+ <dl class="sample1">
+  
+  <dt id="invited-to-join">Daily Life</dt>
+
+  <dd>Paul has recently started university after college and while he can drive
+  decided to use his local bus service. He has found that his stop has no
+  information on the busses available and he had to use the internet from his pc
+  to find out the timetable and busses that would frequent his stop. Because of
+  this lack of information he has been late and deeply wishes to be on time to 
+  his lectures.
+  (Source: eidt me <a
+  href="interview-notes.html">INTERVIEWEE</a>)</dd>
+
+  <dt id="finding-the-tournament">Avoiding being late</dt>
+  <dd>Paul knowning that he has to use the bus 4 times a week for university
+  found that it was frustrating not knowning enough information about his bus
+  stops..(Source:
+  Paul alden)</dd>
+
+  
+ <!-- <dt id="STORYNAME1">STORYNAME1</dt>
+
+  <dd>PARAGRAPH</dd>
+
+  
+  <dt id="STORYNAME2">STORYNAME2</dt>
+
+  <dd>PARAGRAPH</dd>
+
+  
+  <dt id="STORYNAME3">STORYNAME3</dt>
+
+  <dd>PARAGRAPH</dd> -->
+ </dl>
+ </div> <!-- /userstories -->
+
+
+ <div id="capacity">
+ <h3>Performance and Capacity Needs</h3>
+<!--
+ <div class="todo">
+  TODO: Briefly list the stakeholders' desired values for various
+  aspects of the system capacity.  If you have a good idea about
+  averages or rates of increase, note that as well.
+ </div>
+-->
+ <p>By the end of the first year of service, we should to reach the
+ following system capacity:</p>
+
+ <ul class="sample1">
+  <li>250,000+ user visits</li>
+
+  <li>1000's users browsing the web app at any time</li>
+  <li>10 travel vendors posting advertisements on the site</li>
+  <li>100 actual advertisements in the database</li>
+ </ul>
+ </div> <!-- /capacity -->
+</div>
+<!--
+ <div class="todo">
+  TODO:  Check for <a
+  href="http://readyset.tigris.org/words-of-wisdom/user-needs.html">words
+  of wisdom</a> and discuss ways to improve this template.  
+  Or, evaluate the ReadySET Pro <a
+  href="http://www.readysetpro.com/">professional user needs template</a>.
+ </div>
+
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2003-2004 Jason Robbins.  All rights reserved. <a
+ href="readyset-license.html">License terms</a>.  Retain this
+ copyright statement whenever this file is used as a template.
+</div>
+-->
+</div>
+</body>
+</html>
