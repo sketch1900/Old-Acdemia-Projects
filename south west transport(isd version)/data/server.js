@@ -9,10 +9,10 @@ var QUERY = "SELECT * FROM stop";
 /*
 //connect to the db
 var connection = mysql.createConnection({
-						host     : 'mysql5.cems.uwe.ac.uk',
-						user     : 'fet16016225',
-						password : 'Es4y8p',
-						database : 'fet16016225'
+						host     : 'db port',
+						user     : 'your username',
+						password : 'your password',
+						database : 'your database name'
 					});
 					connection.connect(function(err){
 						if(err) {
