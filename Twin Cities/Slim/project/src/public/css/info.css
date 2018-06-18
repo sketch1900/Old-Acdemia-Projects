@@ -1,0 +1,91 @@
+@media all{
+	
+	.h1, h1 {
+		font-size: 3vmax;
+		text-align:center;
+	}
+	
+	.img{
+		max-width:100%;
+		height:auto;
+	}
+	
+	.navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+          max-height: 100%;
+    }
+
+    #navbar-left li{
+      padding: 18% 0rem 0rem 2rem;
+      position: relative;
+      left: -7%;
+    }
+
+    #navbar-right{
+    	display: none
+    }
+
+	.navbar-brand{
+      padding: 0rem 0rem 0rem 1rem;
+      height: 50px;
+      margin: 0.5rem 0rem;
+    }
+
+	.nav-dropdown {
+		position: relative;
+		width: 110%;
+		opacity: 0.6;
+		margin: -0.1rem 0rem 0rem 0rem;
+		height: 100vmax;
+	}
+
+    .navbar{
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-nav {
+		float: left;
+		margin: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li > a {
+		color: white;
+		font-size: 2rem;
+	}
+
+	.navbar-inverse {
+		background-color: black;
+		border-color: black;
+	}
+
+	.navbar-header, #navbar-left{
+      color: white;
+    }
+	
+	.output{
+		margin-top:3vmax;
+		text-align:center;
+	}
+	
+	.output p {
+		font-size: 1.5vmax;
+	}
+}
+
+@media all and (min-width: 768px){
+	
+	#navbar-left{
+      display: none;
+    }
+
+    .navbar-nav {
+		float: right;
+		margin: 0;
+	}
+
+    #navbar-right{
+    	display: block;
+
+    }
+}

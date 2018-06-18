@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twin Cities Project 2017-2018</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./public/js/main.js"></script>
+<link rel="stylesheet" href="./public/css/main.css">
+<script defer src="https://maps.googleapis.com/maps/api/js?key={{ apiKey }}"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" id="navContainer">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <img class="navbar-brand" alt="navbar brand image" src="./public/images/php-logo.png" />
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav nav-dropdown" id="navbar-left">
+         <li><a href="#top" class="shut">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav" id="navbar-right">
+          <li><a href="#top">Home</a></li>
+        </li>
+       </ul>      
+     </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+	<div class="container" id="top">
+            <a href="http://localhost/html/Frameworks/Slim/project/src/rss" class="button_rss"><img alt="A RSS Icon" id="rssIcon" src="./public/images/rssIcon.png" ></a>
+    </div>
+	<div class="container-fluid" id="mainContent">
+		
+		<div class="container-fluid" id="introTitle">
+			<h1>Twin cities</h1>
+			<p>By: Paul Alden and contains the information to both Birmingham and Chicago</p>
+			<div id="output"></div>
+			<!-- Dropdown of facts -->	
+			<p>Click here for some facts.</p>
+				<button name="facts" type="button" class="btn bounce" id="factButton"><img id="factImg" alt="picture of a question mark" src="./public/images/question-mark.jpg"></button>
+			<div id="birminghamFact"></div>
+			<div id="chicagoFact"></div>
+		</div>
+
+		<div class="flexContainer">
+			<div class="box" id="box1">
+				<h2>Birmingham City, Great Britian</h2>
+				<!-- Local Time -->	
+				<p>GMT 0 hours. Current Time:</p>
+				<canvas id="canvas"></canvas>
+				<!-- Weather Forecasts -->
+				<div class="Weather">
+					<!-- todays Forecasts -->	
+					<div class="weatherBox">
+						<h3>Todays Report:</h3>
+						<ul id="birWeather"></ul>
+					</div>
+					<!-- tomorrows Forecasts -->	
+					<div class="weatherBox">
+						<h3>Upcoming Report:</h3>
+						<ul id="futureBirWeather"></ul>
+					</div>
+				</div>
+
+				<div class="innerBox">			
+					<div class="birmingham slideshow-container">
+						<br> 
+						<div id="counter1" style="text-align:center"></div>
+					</div>
+				</div>	
+				<div id="birminghamMap"></div>		
+			</div>
+			
+			<div class="box" id="box2">
+				<h2>Chicago City, United States of America</h2>
+				<div>
+					<!-- Local Time -->	
+					<p>GMT -6 hours. Current Time:</p>
+					<canvas id="canvas2"></canvas>
+
+					<!-- Weather Forecasts -->	
+					<div class="Weather">
+						<!-- todays Forecasts -->	
+						<div class="weatherBox">
+							<h3>Todays Weather:</h3>
+						 	<ul id="chicWeather"></ul>
+						</div>
+						<!-- tomorrows Forecasts -->	
+						<div class="weatherBox">
+							<h3>Upcoming Weather:</h3>
+							<ul id="futureChicWeather"></ul>
+						</div>
+					</div>
+					<div class="innerBox">			 
+						<div class="chicago slideshow-container">
+							<br> 
+							<div id="counter2" style="text-align:center"></div>
+						</div>
+					</div>		
+				</div>
+				<div id="chicagoMap"></div>
+			</div>
+		</div>
+	</div> 
+
+	<div id="test"></div>
+</body>
+</html>

@@ -1,0 +1,703 @@
+/* Mobile Portrait Sizes*/
+@media all{
+	.box {
+		position: relative;
+		top: -16vw;
+		left: -1vmax;
+		padding: 1rem 2rem;
+	}
+
+	.box p {
+		text-align: center;
+	}
+
+	#box1 {
+		border-right: none; 
+	}
+
+	#birminghamMap, #chicagoMap {
+		position: relative;
+		overflow: hidden;
+		width: 58vmax;
+		height: 56vmax;
+		border: 2px solid black;
+		padding: 0;
+		margin: 0rem -2rem;
+	}
+
+	#birminghamMap, #chicagoMap {
+		left: -0.5vmax;
+	}
+
+	#box2 {
+		margin-top: 12vmax;
+	}
+
+	#box2 h2, #box1 h2{
+		font-size: 4vmax;
+	}
+
+	body{
+		background-color:black;
+	}
+
+	#canvas, #canvas2 {
+		background-color: white;
+		position: relative;
+		left: 7vmax;
+		margin-bottom: 3rem;
+	}
+
+	#chicagoMap {
+		margin-top: 12vmax;
+		margin-bottom: -4vmax;
+	}
+
+	#counter1, #counter2 {
+		position: static;
+	}
+
+	.flexContainer {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.flexBox{
+		flex: 1.5;
+	}
+
+	#factButton {
+		margin: 3vmax 0rem 10vmax 0rem;
+		position: relative;
+		left: 2vmax;
+		background: white;
+		left: 12vmax;
+	}
+
+	#facts {
+		display: none;
+		margin-bottom: 10vmax;
+	}
+
+	#factImg {
+		width: 8vmax;
+	}
+
+	#futureBirWeather, #futureChicWeather {
+		position: relative;
+		left: -4vmax;
+		padding-top: 2vmax;
+	}
+
+	#chicWeather li, #futureChicWeather div p, #birWeather li, #futureBirWeather div p {
+		padding-top: 1vmax;
+		font-size: 2.5vmax;
+	}
+
+	h1 {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 4.5vmax;
+		color: white;
+		background-color: black;
+	}
+
+	.innerBox {
+		max-width: 100%;
+		display: block;
+		margin-bottom: -8vmax;
+	}
+
+	.icon {
+		transform: scale(1.2);
+	}
+
+	.info{
+		text-decoration: none;
+		color:black;
+		font-size: 3vmax;
+	}
+
+	.info:hover{
+		color: black;
+	}
+
+	.infoBox{
+		font-size: 3vmax;
+	}
+
+	#mainContent {
+		overflow: hidden;
+		max-width: 90%;
+		background-color: white;
+		padding-top: 5vmax;
+	}
+
+	.navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+          max-height: 100%;
+    }
+
+    #navbar-left li{
+      padding: 18% 0rem 0rem 2rem;
+      position: relative;
+      left: -7%;
+    }
+
+    #navbar-right{
+    	display: none
+    }
+
+	.navbar-brand{
+      padding: 0rem 0rem 0rem 1rem;
+      height: 50px;
+      margin: 0.5rem 0rem;
+    }
+
+	.nav-dropdown {
+		position: relative;
+		width: 110%;
+		opacity: 0.6;
+		margin: -0.1rem 0rem 0rem 0rem;
+		height: 100vmax;
+	}
+
+    .navbar{
+      background-color: transparent;
+      border: none;
+    }
+
+    .navbar-nav {
+		float: left;
+		margin: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li > a {
+		color: white;
+		font-size: 2rem;
+	}
+
+	.navbar-inverse {
+		background-color: black;
+		border-color: black;
+	}
+
+	.navbar-header, #navbar-left{
+      color: white;
+    }
+
+	#rssIcon {
+		max-width: 4vmax;
+		position: relative;
+		left: 77vw;
+		top: 16vw;
+		margin-bottom: -2rem;
+	}
+
+	ul, li {
+		list-style: none;
+		text-align: center;
+		position: relative;
+		left: -2vmax;
+	}
+
+	#birFacts li, #chicFacts li{
+		list-style: circle;
+		left:0;
+		text-align: left;
+		padding:1vmax;
+		font-size: 2.5vmax;
+	}
+
+	.Weather {
+		border: 2px solid black;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	.Weather > h3 {
+		font-weight: bold;
+	}
+
+	/* Img Slider*/
+
+	/* Slideshow container */
+	.slideshow-container {
+		width: 146%;
+		position: relative;
+		margin-bottom: 11vmax;
+		left: -8vmax;
+	}
+
+	.chicago.slideshow-container {
+		margin-bottom: 20vmax;
+	}
+
+	.mySlides2 img, .mySlides1 img {
+		min-height: 90%;
+		max-height: 100%;
+		min-width: 100%;
+		padding: 1rem;
+	}
+
+	/* Caption text */
+	.text {
+		color: white;
+		font-size: 4vmax;
+		width: 100%;
+		padding: 0vmax;
+		position: static;
+		text-align: center;
+		font-weight: bold;
+		background-color: black;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot1, .dot2 {
+	  cursor:pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active1, .active2, .dot1:hover, .dot2:hover  {
+	  background-color: #717171;
+	}
+/* End of img slider */
+	/* bounce effect */
+    .bounce {
+      position:fixed;
+      -webkit-animation:bounce 1s infinite;
+    }
+
+    @-webkit-keyframes bounce {
+      0%       { bottom:5px; }
+      25%, 75% { bottom:15px; }
+      50%      { bottom:20px; }
+      100%     {bottom:0;}
+    }
+
+    @-o-keyframes bounce {
+      0%       { bottom:5px; }
+      25%, 75% { bottom:15px; }
+      50%      { bottom:20px; }
+      100%     {bottom:0;}
+	}
+	/* End of bounce effects*/
+}
+
+/* Long Screen mobiles. *iphone x, 6 plus, 7, 7 plus,8, samsung 8, 7 etc*/
+@media all and (min-width: 375px) and (min-height: 700px){ 
+	#birminghamMap, #chicagoMap {
+		width: 48vmax;
+		height: 43vmax;
+	}
+}
+
+/* End of Mobile Portrait Sizes*/
+
+/* wider mobiles and landscape mode */
+
+/* Size 500px*/
+@media all and (min-width: 500px){ 
+	#birminghamMap, #chicagoMap {
+		width: 55.5vmax;
+		height: 52vmax;
+	}
+
+	#canvas, #canvas2 {
+		left: 13vmax;
+	}
+
+	#counter1, #counter2 {
+		top: 56vmax;
+	}
+
+	#factButton {
+		left: 17vmax;
+	}
+
+	#introTitle {
+		margin-bottom: 5vmax;
+	}
+
+	#mainContent {
+		max-width: 87%;
+	}
+	
+	.slideshow-container {
+		width: 128%;
+		left: -6vmax;
+	}
+
+	.text {
+		bottom: 50vmax;
+	}
+
+	ul, li {
+		font-size: 2vw;
+	}
+
+	.Weather {
+		margin-bottom: 6rem;
+	}
+ }
+
+/* size 700px */
+ @media all and (min-width: 700px){
+	 
+	 #birminghamMap, #chicagoMap {
+		width: 74.5vmax;
+		height: 52vmax;
+	}
+
+ 	#canvas, #canvas2 {
+		left: 24vmax;
+	}
+	
+	#factButton {
+		left: 28vmax;
+	}
+
+	#futureChicWeather{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icon {
+		transform: scale(2);
+	}
+
+	.info {
+		font-size: 1vmax;
+	}
+
+ 	#introTitle{
+ 		margin-bottom: 5rem;
+ 	}
+	
+	#rssIcon {
+		left: 86vw;
+		top: 10vw;
+	}
+
+	.slideshow-container {
+		width: 100%;
+		left: 0vmax;
+	}
+ }
+
+
+/* End of Mobile sizes*/
+
+/*Normal tablet size*/
+@media all and (min-width: 768px){
+	/* Fonts */
+	#futureChicWeather h3, #futureChicWeather p, #futureBirWeather h3, #futureBirWeather p{
+		font-size: 2vmax;
+	} 
+	/* End font */
+
+	#birWeather{
+		position: relative;
+		overflow: hidden;
+		left: 2vmax;
+		top: -8vmax;
+	}
+
+	#box2 {
+		margin-top: 16vmax;
+	}
+
+	div h3 {
+		margin: 3rem 0rem;
+		position: relative;
+		left: -2vw;
+	}
+
+	#futureChicWeather{
+		position: relative;
+		left: 8vw;
+	}
+
+	#futureBirWeather{
+		position: relative;
+		left: -2vw;
+	}
+
+	.flex{
+		flex:1.5;
+	}
+
+	#factButton {
+		left: 25vmax;
+	}
+
+	li p, ul p {
+    	margin-top: 1rem;
+	}
+
+	#navbar-left{
+      display: none;
+    }
+
+    .navbar-nav {
+		float: right;
+		margin: 0;
+	}
+
+    #navbar-right{
+    	display: block;
+
+    }
+
+	#rssIcon {
+		max-width: 6vmax;
+	}
+
+	.Weather{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.weatherBox {
+		flex: 1.5;
+		border: 2px solid black;
+	}
+}
+
+
+@media all and (min-width: 1024px){
+	#birWeather {
+		left: 0vmax;
+		top: 2vmax;
+	}
+	
+	#birminghamMap, #chicagoMap {
+		margin: 0rem -0.5rem;
+		width: 84.5vmax;
+	}
+
+	#canvas, #canvas2 {
+		left: 27vmax;
+		margin-bottom: 4rem;
+		margin-top: 3rem;
+		width: 43vmax;
+	}
+	
+	div h3 {
+		margin: 3rem 0rem;
+		left: 0vw;
+	}
+	
+	h3, h3 {
+		font-size: 3.5vmax;
+	}
+	
+	#futureBirWeather, #futureChicWeather {
+		padding-top: 0vmax;
+	}
+
+	#factButton {
+		left: 35vmax;
+	}
+
+	.infoBox {
+		font-size: 1.5vmax;
+	}	
+	
+	#rssIcon {
+		max-width: 4vmax;
+	}
+
+	#rssIcon {
+		left: 84vw;
+		top: 8vw;
+	}
+}
+
+/* End of tablet size */
+
+
+/* Desktop Sizes */
+
+@media all and (min-width: 1270px){
+	/* Fonts */
+
+	#chicWeather li, #futureChicWeather div p, #birWeather li, #futureBirWeather div p {
+		font-size: 1.3vmax;
+	}
+
+	div h3 {
+		font-size: 2.5vmax;
+	}
+
+	ul, li, p {
+		font-size: 1vmax;
+	}
+
+	.Weather > h3 {
+		font-size: 3rem;
+	}
+	/* End of Fonts*/
+
+	.box {
+		left: 0.5vmax;
+		flex:1.5;
+	}
+
+	#box1{
+		border-right: 1px solid black;
+	}
+
+	#box1, #box2 {
+		max-width: 45vmax;
+		margin-bottom: -24vmax;
+		margin-top: 0vmax;
+		padding-right: 6rem;
+	}
+
+	#box2 h2, #box1 h2 {
+		font-size: 3vmax;
+		margin-right: 6rem;
+	}
+
+	#birWeather {
+		left: -1vmax;
+		top: -0.5vmax;
+	}
+
+	#birminghamMap, #chicagoMap {
+		width: 40vmax;
+		height: 41vmax;
+	}
+
+	#birminghamMap, #factButton {
+		left: 0vmax;
+	}
+
+	#chicagoMap {
+		top: -9.5vmax;
+		left: 0.5vmax;
+	}
+
+	#canvas, #canvas2 {
+		width: 400px;
+		left: 8vmax;
+	}
+
+	.chicago.slideshow-container {
+		margin-bottom: 20.5vmax;
+	}
+
+	.container-fluid{
+		text-align: center;
+	}
+
+	div h3 {
+		font-size: 2vmax;
+		left: 0vw;
+	}
+
+	.flexContainer{
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#futureChicWeather img{
+		width: 29%;
+	}
+
+	#futureBirWeather, #futureChicWeather {
+		left: 0;
+		padding-top: 0;
+		position: relative;
+		margin-bottom: -1vmax;
+	}
+
+	#futureChicWeather {
+		left: 2vw;
+	}
+
+	#futureBirWeather {
+		left: -1vmax;
+		position: relative;
+	}
+
+	#chicWeather li, #futureChicWeather div p, #birWeather li, #futureBirWeather div p {
+		font-size: 1.3vmax;
+		margin: -0.3rem;
+	}
+
+	.icon {
+		width: 14%;
+		transform: scale(2);
+	}
+
+	#introTitle {
+		margin-bottom: 15vmax;
+	}
+
+	#mainContent {
+		max-width: 90%;
+	}
+
+	#rssIcon {
+		max-width: 3vmax;
+		left: 79vw;
+		top: 5vw;
+		margin-bottom: -3rem;
+	}
+
+	.text {
+		font-size: 2vmax;
+	}
+
+	ul, li {
+		left: -2%;
+	}
+}
+
+/*1360:*/
+@media all and (min-width: 1590px){
+	#rssIcon {
+		left: 74vw;
+	}
+}
+
+/*1080px Size*/
+@media all and (min-width: 1910px){
+	#chicagoFact {
+		padding-bottom: 5rem;
+	}
+	
+	#factImg {
+		width: 6vmax;
+	}
+	
+	h1 {
+		font-size: 4vmax;
+	}
+
+	.icon {
+		width: 14%;
+		margin: 4vw 0rem;
+	}
+
+	#rssIcon {
+		left: 70vw;
+		top: 5vw;
+	}
+}
+/* End of Desktop Sizes */

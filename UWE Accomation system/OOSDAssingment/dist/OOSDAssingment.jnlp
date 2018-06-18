@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OOSDAssingment.jnlp">
+  <information>
+    <title>OOSDAssingment</title>
+    <vendor>Sketch</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="OOSDAssingment.jar" size="112579" download="eager" />
+    <jar href="lib\hamcrest-core-1.3.jar" size="45024" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\kotlin-runtime-1.1.50.jar" size="195481" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="OOSDAssingment" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="app.App"  name="OOSDAssingment" />
+  <update check="always"/>
+</jnlp>

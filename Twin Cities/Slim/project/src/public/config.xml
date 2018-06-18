@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<api_library>
+		<api name="Google Maps API">
+			<api_key>AIzaSyAKfqon3eb5RlQhQKb8Fwgj6eyfrrFaq6U</api_key>
+		</api>
+		<api name="Google Visualization API">
+		</api>
+		<api name="Twitter API">
+			<oauth_access_token>923926752287739904-70XazpkaCiWycVDduvepPfO11zmpvFF</oauth_access_token>
+			<oauth_access_token_secret>2q05ZAKxcrL9eibKDwtDVklpKeekDIVLIpVXVcJgqbJpm</oauth_access_token_secret>
+			<consumer_key>2wvePbCvJBaauHt5Ts1MpREAd</consumer_key>
+			<consumer_key_secret>fE8yMQNQxk1STmarAnPgmGngpTWcAuPCKMyFvtYwrkQxEYTCQ5</consumer_key_secret>
+		</api>
+		<api name="Wheather Forecast">
+			<wheather name="wheather">
+				<appid>5dfe618156c48bfcc5f49dc578ff9678</appid>
+			</wheather>
+		</api>
+	</api_library>
+<!--	<files>
+		<dir name="DSA_Assignment">
+			<file name="db.php"/>
+			<file name="home.php"/>
+			<file name="rss.php"/>
+			<dir name="poi and location csv files">
+				<file name="pois.csv"/>
+				<dir name="original poi information">
+					<dir name="birmingham">
+						<file name="notes and useful websites.txt"/>
+						<file name="poi_birmingham"/>
+						<file name="rc_diocese_of_birmingham.csv"/>
+					</dir>
+					<dir name="chicago">
+						<file name="chicago poi's that work"/>
+						<file name="poi_chicago.csv"/>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="public">
+				<dir name ="css">
+					<file name="main.css"/>
+				</dir>
+				just in case
+				<dir name="images">
+					<file name="ashton_hall.jpg"/>
+					<file name="Birmingham_Mueseum.jpg"/>
+					<file name="Blessed_Robert_birmingham.jpg"/>
+					<file name="bull_ring_birmingham.jpg"/>
+					<file name="cadburys_world_birmingham.jpg"/>
+					<file name="charney_house.jpg"/>
+					<file name="chicago_theatre.jpg"/>
+					<file name="chicago_magnificent_mile.jpg"/>
+					<file name="mcCormick_tribune_plaza.jpg"/>
+					<file name="question-mark.jpg"/>
+					<file name="rssicon.png"/>
+				</dir>
+				<dir name="js">
+					<file name="main.js"/>
+				</dir>
+			</dir>
+		</dir>
+	</files>-->
+</config>

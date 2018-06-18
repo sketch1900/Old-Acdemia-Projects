@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Twin Cities: Information Page</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./public/css/info.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" id="navContainer">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <img class="navbar-brand" alt="navbar brand image" src="./public/images/php-logo.png" />
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav nav-dropdown" id="navbar-left">
+         <li><a href="http://localhost/html/Frameworks/Slim/project/src/" class="shut">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav" id="navbar-right">
+          <li><a href="http://localhost/html/Frameworks/Slim/project/src/">Home</a></li>
+        </li>
+       </ul>      
+     </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+  <div class="output container-fluid">
+    
+    <h1>Information About {{ name }}</h1>
+    <p><img alt="{{ description }}" class="img" src="{{ img }}">
+      <br></br>
+      {{ description }}
+      <a href="{{ url }}">Wikia Link</a>
+    </p>
+  </div>
+  
+</body>
+</html>

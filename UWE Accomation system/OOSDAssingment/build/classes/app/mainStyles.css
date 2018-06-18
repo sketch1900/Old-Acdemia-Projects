@@ -1,0 +1,154 @@
+/* app styles*/
+
+/** Tab GridPane header styles*/
+#cleanText, #cleanText2, #cleanText3, #cleanText4, #cleanText5{
+    -fx-font-weight:bold;
+    -fx-font-family: "Charter";
+    -fx-font-size: 20;
+}
+
+/** GridPane styles */
+#grid1{
+    -fx-border-style: solid;
+    -fx-border-width: 3;
+    -fx-border-color: black;
+    -fx-max-width:650px;
+    -fx-font-size:15;
+}
+
+/** TextField and label styles */
+#leaseNum1, #leaseNum2, #leaseNum3, #leaseNum4,
+#roomNum1, #roomNum2, #roomNum3, #roomNum4, #studentId,
+#hallNum1, #hallNum2, #hallNum3, #hallNumber4, #hallNumber5,
+#studentName1, #studentName2, #studentName3, #studentName4,
+#rentRate1,#rentRate2, #roomsLeft, #roomCount, #hallAddress,
+#hallName1,#hallName2, #hallName3, #hallName4, #hallName5,
+#occupancy, #occupancy2, #occupancy3, #status, #status3, #userName, #password,
+#duration, #duration2, #duration4, #manager1, #warden1
+{
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-color: grey; 
+}
+
+/** Login styles */
+#userLabel, #passLabel{ 
+    -fx-font-size:20;
+    -fx-text-alignment-justify: center;
+}
+
+#loginLabel{
+    -fx-font-weight:bold;
+    -fx-font-size:40;
+}
+
+/*** The menu bar itself ***/    
+.menu-bar {
+    -fx-background-color: black;
+}
+
+/*** Top-level menu itself (not selected / hovered) ***/
+.menu-bar > .container > .menu-button {
+    -fx-background-color: black;
+}
+
+/*** Top-level menu's label (not selected / hovered) ***/
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: white;
+}
+
+/*** Top-level menu's label (disabled) ***/
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** Top-level menu itself (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: white;
+}
+
+/*** Top-level menu's label (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: black;
+}
+
+/*** The item itself (not hovered / focused) ***/    
+.menu-item {
+    -fx-background-color: black; 
+}
+
+/*** The item's label (not hovered / focused) ***/   
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+/*** The item's label (disabled) ***/   
+.menu-item .label:disabled {
+    -fx-opacity: 1.0;
+}    
+
+/*** The item itself (hovered / focused) ***/    
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: white; 
+}
+
+/*** The item's label (hovered / focused) ***/  
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-text-fill: black;
+}
+
+/*** The context menu that contains a menu's menu items ***/  
+.context-menu {
+    -fx-background-color: black; 
+}
+
+/** Tab  Styles */
+.tab, #manager, #warden{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label{
+    -fx-font-weight:bold;
+    -fx-text-decoration: none;
+    -fx-border-color: transparent;
+}
+
+#all, #manager, #warden, #login, #hall, #leas, #mainPane, #bg, #bp1,
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: white;
+}
+
+#manager{
+    -fx-margin-left:1em;
+}
+
+.tab-label{
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+}
+
+/** table styles */
+#table1, #table2, #table3, #table4, #table5{
+    -fx-font-size:11;
+    -fx-text-alignment-justify: center;
+    -fx-text-wrap: true;
+    -fx-border-style: solid;
+    -fx-border-width: 3;
+    -fx-border-color:black;
+}
+
+/** root Pane styles  */
+.root {
+    -fx-font-family: "Charter";
+    -fx-font-size: 15;
+}
+
+/* Error message */
+#error1, #error2, #error3{
+    -fx-text-fill: red;
+}
