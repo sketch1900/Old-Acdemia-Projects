@@ -1,5 +1,5 @@
 # UWE-Projects
-A folder containing the original Projects from UWE
+A folder containing my old and original Projects from UWE
 
 ## South West Transport:
 
